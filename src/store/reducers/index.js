@@ -1,5 +1,4 @@
 import {CALCULATE, RESET, SET_DATA, SET_MATERIAL, SET_MODE} from '../actions';
-import { builds } from "../../data";
 
 const defaultState = {
 	step: 1,

@@ -29,7 +29,7 @@ function App() {
 				const material = builds[building - 1].material;
 				dispatch(calculateAction({building, material: material[0]}, skip ? 3 : 2));
 				dispatch(setMaterial(material));
-				return;
+				break;
 			}
 			
 			case 2: {
@@ -38,7 +38,7 @@ function App() {
 					return;
 				}
 				dispatch(calculateAction({...queryObject}, 3))
-				return;
+				break;
 			}
 			
 			case 3: {
@@ -54,15 +54,16 @@ function App() {
 				dispatch(setMode('calculate'))
 				dispatch(calculateAction({...queryObject}, 4))
 				fetchData(state.query);
-				return;
+				break;
 			}
 			
 			case false:{
 				dispatch(calculateAction(queryObject, state.step))
+				break;
 			}
 			
 			default: {
-				return;
+				break;
 			}
 		}
 	}
