@@ -1,0 +1,11 @@
+@import '../../scss/vars';
+
+.btn{
+  border: 1px $black solid;
+  font-size: ($base-font-counter * 1.7)+rem;
+  padding: ($base-font-counter * 0.5)+rem ($base-font-counter * 1.5)+rem;
+  background: $light;
+  border-radius: 0.4em;
+  cursor: pointer;
+  margin: 0 ($base-font-counter * .25)+rem;
+}

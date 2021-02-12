@@ -1,0 +1,9 @@
+@import "../../scss/vars";
+
+.input{
+  display: inline-block;
+  border: 1px darken($light, 7%) solid;
+  line-height: 1;
+  width: ($base-font-counter * 9)+rem;
+  padding: ($base-font-counter * 0.8)+rem;
+}

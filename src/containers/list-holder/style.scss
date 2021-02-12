@@ -1,0 +1,45 @@
+@import '../../scss/vars';
+
+.list{
+  border: 1px $gray solid;
+
+  .list-holder-title{
+    margin: 0;
+    padding: ($base-font-counter * 1)+rem ($base-font-counter * 0.5)+rem;
+    font-size: ($base-font-counter * 1.5)+rem;
+    color: $primary;
+    background: $light;
+    font-weight: 500;
+  }
+
+  .list-holder{
+    padding: ($base-font-counter * 1.8)+rem ($base-font-counter * 1.8)+rem;
+
+    ul{
+      padding-left: ($base-font-counter * 1.8)+rem;
+    }
+  }
+
+  .list-item{
+    text-align: left;
+    font-size: ($base-font-counter * 1.5)+rem;
+    line-height: 1.4;
+
+    span{
+      display: inline-block;
+      text-decoration: underline;
+      cursor: pointer;
+      color: $success;
+
+      &:hover{
+        font-weight: 700;
+      }
+    }
+
+    &.active{
+      span{
+        font-weight: 700;
+      }
+    }
+  }
+}

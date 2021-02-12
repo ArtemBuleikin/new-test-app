@@ -1,0 +1,7 @@
+@import '../../scss/vars';
+
+.step-label{
+  color: $gray;
+  font-size: ($base-font-counter * 1.5)+rem;
+  font-weight: 400;
+}

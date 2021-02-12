@@ -1,0 +1,39 @@
+
+@import './scss/_vars.scss';
+
+
+html{
+  font-size: ($base-font)+px;
+}
+
+body{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0.7rem;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+p{
+  font-size: ($base-font-counter * 1.7)+rem;
+  margin: 0;
+}
+
+.error{
+  color: $danger !important;
+}
+
+.success{
+  color: $success !important;
+}
+
+.primary{
+  color: $primary !important;
+}
